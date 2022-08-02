@@ -77,6 +77,12 @@
               <i class="icofont-envelope"></i>
               trans@awtoulag.gov.tm
             </p>
+            <p>
+              <a href="{{ route('feed') }}">
+                <i class="icofont-rss"></i>
+                RSS
+              </a>
+            </p>
           </div>
         </div>
       </div>
