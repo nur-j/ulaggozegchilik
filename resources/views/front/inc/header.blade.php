@@ -38,19 +38,7 @@
               </a>
             </div>
             <ul class="media-wrap d-none d-lg-flex">
-              <!-- media-list start -->
-              <li class="media media-list">
-                <span class="media-icon"
-                  ><i class="icofont-clock-time"></i
-                ></span>
-                <div class="media-content">
-                  <span class="media-sub-heading">{{ __('messages.working hours') }}</span>
-                  <span class="media-heading"
-                    >8.00 - 19.00
-                  </span>
-                </div>
-              </li>
-              <!-- media-list end -->
+
 
               <!-- media-list start -->
               <li class="media media-list">
