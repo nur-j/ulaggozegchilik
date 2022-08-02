@@ -1,0 +1,97 @@
+:root {
+  --main: #0a7b79;
+  --helper: #6db789;
+}
+
+.index-page-thumb {
+  width: 150px;
+  height: 150px;
+}
+
+.about-area {
+  font-size: 20px;
+  background-color: rgba(10,123,121,0.1);
+  padding: 30px !important;
+}
+
+
+.about-area img {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.about-area .btn{
+  width: 100%;
+  font-size: 20px;
+}
+
+footer {
+  background-color: var(--main);
+  color: white !important;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white !important;
+}
+
+footer .about-widget {
+  font-size: 30px;
+}
+
+.custom-alert {
+  position: fixed;
+  z-index: 10;
+  width: 80%;
+  top: 45%;
+  left: 10%;
+}
+
+label.form-label {
+  font-size: 16px;
+}
+
+/* By pages */
+
+/* DASHBOARD */
+
+.dashboard .accordion-body {
+  color: #000;
+  font-size: 16px;
+}
+
+.dashboard .accordion-body span {
+  border: 1px solid #000;
+  border-radius: 5px;
+  
+  padding: 2px;
+}
+
+.single_request_page h5 {
+  font-weight: bold;
+}
+
+
+/* MEDIA SIZES */
+@media screen and (min-width: 992px) {
+  footer .about-widget  {
+    flex-direction: column;
+    font-size: 20px;
+  }
+
+  footer a.footer-logo {
+    margin-bottom: 20px;
+  }
+
+  header {
+    background: var(--main);
+     background-image: 
+    linear-gradient(4deg, rgba(10,123,121,0.75) 30%, rgba(10,123,121,0.6) 45%, rgba(10,123,121,0.7) 100%),
+    url("../img/awtoulag.jpg") !important;  
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+  }
+}
+
