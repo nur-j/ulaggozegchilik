@@ -111,6 +111,13 @@
           <input type="text" name="mesto_wydachi" class="form-control" id="mesto_wydachi">
         </div>
 
+        <div class="mb-3 col-md-6">
+          <label for="cmr_no" class="form-label">
+            CMR №
+          </label>
+          <input type="text" name="cmr_no" class="form-control" id="cmr_no">
+        </div>
+
         <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
 
       </div>

@@ -46,6 +46,8 @@
       <h5>{{ $permission->srok }}</h5>
       <p>Rugsatnamanyň berlen ýeri we wagty: </p>
       <h5>{{ $permission->mesto_wydachi }}</h5>
+      <p>CMR №: </p>
+      <h5>{{ $permission->cmr_no }}</h5>
     </div>
 
     <form method="POST" action="{{ route('admin.permission.delete', $permission->id) }}">

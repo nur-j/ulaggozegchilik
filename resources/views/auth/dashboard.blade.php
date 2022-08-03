@@ -66,6 +66,9 @@
                         <p>
                           {{ __('permission.mesto_wydachi') }}: <span>{{ $permission->mesto_wydachi }}</span>
                         </p>
+                        <p>
+                          CMR №: <span>{{ $permission->cmr_no }}</span>
+                        </p>
                       </div>
                     </div>
                   </div>

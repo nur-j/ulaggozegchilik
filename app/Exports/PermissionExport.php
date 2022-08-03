@@ -30,7 +30,8 @@ class PermissionExport implements FromCollection, WithMapping, WithHeadings
             $row->gruz,
             $row->prinad,
             $row->zayawitel,
-            $row->mesto_wydachi
+            $row->mesto_wydachi,
+            $row->cmr_no
         ];
         return $fields;
     }
@@ -49,7 +50,8 @@ class PermissionExport implements FromCollection, WithMapping, WithHeadings
             'Наименование и вес груза',
             'Принадлежность груза',
             'Наименование заявителя',
-            'Место выдачи и дата'
+            'Место выдачи и дата',
+            'CMR №:'
         ];
     }
 }
