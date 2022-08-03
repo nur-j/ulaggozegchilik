@@ -54,6 +54,7 @@ class NewsController extends Controller
         $post->title_en = $request->title_en;
         $post->description_en = $request->description_en;
         $post->category_id = $request->category_id;
+        $post->created_at = $request->created_at;
 
         if ($request->hasFile('poster')) {
             $path = $request->poster->store('images');

@@ -9,18 +9,25 @@
 }
 
 .about-area {
-  font-size: 20px;
   background-color: rgba(10,123,121,0.1);
+}
+
+.services-area {
+  margin-top: 20px;
+}
+
+.about-area, .services-area {
+  font-size: 20px;
   padding: 30px !important;
 }
 
 
-.about-area img {
+.about-area img, .services-area img {
   height: 100%;
   border-radius: 10px;
 }
 
-.about-area .btn{
+.about-area .btn, .services-area .btn {
   width: 100%;
   font-size: 20px;
 }

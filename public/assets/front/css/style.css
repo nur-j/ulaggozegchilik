@@ -6700,24 +6700,24 @@ body.offcanvas-open {
 -----------------------------------------------------------------------
 */
 .blog-area.blog-default-area {
-  padding: 125px 0px;
+  padding: 25px 0px;
 }
 
 @media only screen and (max-width: 1199px) {
   .blog-area.blog-default-area {
-    padding: 90px 0px;
+    padding: 20px 0px;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .blog-area.blog-default-area {
-    padding: 80px 0px;
+    padding: 20px 0px;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .blog-area.blog-default-area {
-    padding: 60px 0 80px;
+    padding: 20px 0 80px;
   }
 }
 

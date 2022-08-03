@@ -92,7 +92,7 @@
         </div>
 
         <div class="form-group">
-          <label>Kategoriýa</label>
+          <label>Senesi</label>
           <input type="date" name="created_at" value="{{ $post->date }}">
         </div>
 

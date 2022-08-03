@@ -40,7 +40,7 @@
       </section>
       <!--== End Hero Area Wrapper ==-->
 
-      <!--== Start Blog Area Wrapper ==-->
+      <!--== Start About Area Wrapper ==-->
       <section class="about-area">
         <div class="container">
           <div class="row">
@@ -84,7 +84,42 @@
           </div>
         </div>
       </section>
-      <!--== End Blog Area Wrapper ==-->
+      <!--== End About Area Wrapper ==-->
+
+      <!--== Start Services Area Wrapper ==-->
+      <section class="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <img src="{{ asset('assets/front/img/home_services.png') }}" alt="services">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="section-title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <h2 class="title"><span>Hyzmatlarymyz</span></h2>
+                <div>
+                  "Türkmenulaggözegçilik" döwlet kärhanasy Türkmenistanyň ulag ulgamynda halkara ulag-üstaşyr geçelgeleriniň mümkinçilikleriniň artdyrylmagy, ulaglar arkaly ýük gatnawlaryny kadaly guramak hem-de bu işleriň guramaçylykly amala aşyrylmagyny üpjün etmek maksady bilen giň gerimli awtoulag hyzmatlaryny hödürleýär.  
+                  <div class="btn-area mt-3">
+                    <a href="{{ route('services.page') }}" class="btn btn-success">Doly oka</a>
+                  </div>
+                </div>
+              </div>
+              
+
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!--== End Services Area Wrapper ==-->
 
 
       <!--== Start Blog Area Wrapper ==-->

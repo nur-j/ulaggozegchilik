@@ -87,6 +87,11 @@
           </select>
         </div>
 
+        <div class="form-group">
+          <label>Senesi</label>
+          <input type="date" name="created_at" value="{{ date('Y-m-d') }}">
+        </div>
+
 
         <div class="form-group">
           <label for="exampleInputEmail1" class="form-label">Habaryň suraty</label>
