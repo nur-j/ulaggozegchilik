@@ -49,6 +49,9 @@ Route::prefix('/backend/admin')->group(function () {
     Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
     Route::get('/requests/{id}', [RequestController::class, 'show'])->name('requests_single');
     Route::get('/requests/export', [RequestController::class, 'export'])->name('requests.export');
+    Route::get('/notifications', function() { 
+        return response()->view('pusher'); 
+    });
 
     Route::get('/permissions', [PermissionController::class, 'adminIndex'])->name('admin.permissions');
     Route::get('/permission/{id}', [PermissionController::class, 'adminShow'])->name('admin.permission.single');
@@ -90,3 +93,9 @@ Route::get('viewmail', function() {
 
 /* RSS */
 Route::get('/rss', [RssFeedController::class,'generate_rss_feed'])->name('feed');
+
+/* PUSHER TEST */
+Route::get('test', function () {
+    event(new App\Events\RequestSended('Someone'));
+    return "Event has been sent!";
+});

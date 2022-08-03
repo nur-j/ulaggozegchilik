@@ -17,7 +17,7 @@ class RequestController extends Controller
     {
         $reqs = R::orderBy('created_at', 'desc')->paginate(10);
         return view('admin.requests', compact('reqs'));
-    }
+    }   
 
     public function save_request(Request $request)
     {
