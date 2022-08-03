@@ -31,7 +31,9 @@ class RequestController extends Controller
                 'phone' => 'required',
                 'yuztutma' => 'required',
                 'ygtyyarnama' => 'required',
-                'dowlet_sanaw' => 'required'
+                'dowlet_sanaw' => 'required',
+                'director_firstname' => 'required',
+                'director_lastname' => 'required'
             ]);
 
             if ($validator->fails()) {
@@ -73,7 +75,9 @@ class RequestController extends Controller
                 'cmr_number' => 'required',
                 'permission_number' => 'required',
                 'fullname' => 'required',
-                'phone' => 'required'
+                'phone' => 'required',
+                'director_firstname' => 'required',
+                'director_lastname' => 'required'
             ]);
 
             if ($validator->fails()) {

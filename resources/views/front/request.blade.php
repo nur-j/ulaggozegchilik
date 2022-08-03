@@ -49,6 +49,8 @@
           <label for="cmr_number" class="form-label">{{ __('request.cmr_number') }}</label>
           <input type="text" name="cmr_number" class="@if ($errors->has('cmr_number')) is-invalid @endif form-control" id="cmr_number" value="{{ old('cmr_number') }}">
         </div>
+        <hr class="mt-5">
+        <div style="font-weight: bold" >Jogapkär işgär</div>
         <div class="mb-3">
           <label for="fullname" class="form-label">{{__('request.surname_name') }}</label>
           <input type="text" name="fullname" class="@if ($errors->has('fullname')) is-invalid @endif form-control" id="fullname" value="{{ old('fullname') }}">
@@ -60,6 +62,16 @@
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input type="text" name="email" class="form-control" id="email" value="{{ old('email') }}">
+        </div>
+        <hr  class="mt-5">
+        <div style="font-weight: bold">Edaranyň direktory</div>
+        <div class="mb-3">
+          <label for="director_firstname" class="form-label">Ady</label>
+          <input type="text" name="director_firstname" class="@if ($errors->has('director_firstname')) is-invalid @endif form-control" id="director_firstname" value="{{ old('director_firstname') }}">
+        </div>
+        <div class="mb-3">
+          <label for="director_lastname" class="form-label">Familiýasy</label>
+          <input type="text" name="director_lastname" class="@if ($errors->has('director_lastname')) is-invalid @endif form-control" id="director_lastname" value="{{ old('director_lastname') }}">
         </div>
         <button type="submit" name="action" class="btn btn-info" value="generate_pdf">PDF görnüşde ýükle</button>
         <div class="form2part">

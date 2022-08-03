@@ -14,7 +14,8 @@ class AddDirectorToRequestsTable extends Migration
     public function up()
     {
         Schema::table('requests', function (Blueprint $table) {
-            //
+            $table->string('director_firstname');
+            $table->string('director_lastname');
         });
     }
 
@@ -26,7 +27,7 @@ class AddDirectorToRequestsTable extends Migration
     public function down()
     {
         Schema::table('requests', function (Blueprint $table) {
-            //
+            $table->dropColumn(['director_firstname', 'director_lastname']);
         });
     }
 }
