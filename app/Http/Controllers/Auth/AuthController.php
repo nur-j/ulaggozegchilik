@@ -96,4 +96,17 @@ class AuthController extends Controller
         return redirect('login');
     }
 
+    public function loginAdmin()
+    {
+        return view('admin.login');
+    }
+
+    public function postLoginAdmin(Request $request)
+    {
+        if (Auth::attempt(['name' => $request->name, 'password' => $request->password])) {
+            return redirect()->route('admin_panel')->withSucces('Siz admin panelde');
+        }
+        return abort(404);
+    }
+
 }

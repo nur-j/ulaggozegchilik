@@ -45,15 +45,15 @@
         @foreach ($user->permissions as $permission)
           <div id="accordion">
             <div class="card">
-              <div class="card-header" id="headingOne">
+              <div class="card-header" id="heading{{ $permission->id }}">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ $permission->id }}" aria-expanded="false" aria-controls="collapse{{ $permission->id }}">
                     Rugsatnama №{{ $permission->razresheniye_no }}
                   </button>
                 </h5>
               </div>
           
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapse{{ $permission->id }}" class="collapse" aria-labelledby="heading{{ $permission->id }}" data-parent="#accordion">
                 <div class="card-body">
                   <p>
                     {{ __('permission.razresheniye_no') }}: <span>{{ $permission->razresheniye_no }}</span>

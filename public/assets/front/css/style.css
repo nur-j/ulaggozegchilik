@@ -6878,6 +6878,7 @@ body.offcanvas-open {
   width: 300px;
   height: 200px;
   margin-right: 26px;
+  flex-shrink: 0;
   overflow: hidden;
   position: relative;
   z-index: 1;

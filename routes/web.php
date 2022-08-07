@@ -27,7 +27,7 @@ use App\Http\Controllers\Auth\UserController;
 
 /* +++++++++++++++++  ADMIN ROUTES   +++++++++++++++++++++++++ */
 
-Route::prefix('/backend/admin')->group(function () {
+Route::group(['prefix' => '/backend/admin', 'middleware' => 'admin'], function () {
     Route::get('/', function() {
         return view('admin.home');
     })->name('admin_panel');
@@ -60,6 +60,10 @@ Route::prefix('/backend/admin')->group(function () {
 });
 
 
+/* admin login page */
+Route::get('/backend/admin/login', [AuthController::class, 'loginAdmin'])->name('admin.login');
+Route::post('/backend/admin/login', [AuthController::class, 'postLoginAdmin'])->name('admin.login.post');
+Route::get('/backend/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
 
 
 
