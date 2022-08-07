@@ -40,8 +40,10 @@ Route::prefix('/backend/admin')->group(function () {
     Route::delete('delete-post/{id}', [NewsController::class, 'destroy'])->name('delete_post');
 
     Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
-    Route::get('/requests/{id}', [RequestController::class, 'show'])->name('requests_single');
     Route::get('/requests/export', [RequestController::class, 'export'])->name('requests.export');
+    Route::get('/requests/{id}', [RequestController::class, 'show'])->name('requests_single');
+    Route::put('/request/{id}/accept', [RequestController::class, 'accept'])->name('accept.request');
+    Route::put('/request/{id}/reject', [RequestController::class, 'reject'])->name('reject.request');
     Route::get('/notifications', function() { 
         return response()->view('pusher'); 
     });

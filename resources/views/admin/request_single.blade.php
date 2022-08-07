@@ -14,11 +14,20 @@
   </style>
 @endsection
 
-@section('page_title') Ýüz tutma #{{ $req->id }} @endsection
+@section('page_title') Ýüz tutma - {{ $req->id }} @endsection
 
 @section('content')
   <div class="container-fluid single_request_page">
     <div class="card p-3">
+
+      @if ($req->status === 1)
+        <div class="alert alert-success">Bu ýüztutma kabul edildi!</div>
+      @endif
+
+      @if ($req->status === 2)
+        <div class="alert alert-danger">Bu ýüz tutma kabul edilmedi! {{ $req->cause_of_reject }}</div>
+      @endif
+
       <p>Edaranyň ady</p>
       <h5>{{ $req->corpname }}</h5>
       <p>Türkmenistanyň çäginde ýük ýüklemek rugsatnamasynyň sany</p>
@@ -55,6 +64,44 @@
           <span style="color: red">Bu faýl ýok</span>
         @endif
       </h5>
+
+      <div class="card bg-secondary p-3">
+        @if ($req->status !== 1)
+          <form action="{{ route('accept.request', $req->id) }}" method="post">
+            @csrf
+            @method('put')
+            <button class="btn btn-success">Ýüztutmany kabul etmek</button>
+          </form>
+        @endif
+
+        <br>
+
+        @if ($req->status !== 2) 
+          <button class="btn btn-danger" style="width: max-content" data-btn="reject">Ýüz tutmany ret etmek</button>
+          <form data-form="reject" action="{{ route('reject.request', $req->id) }}" method="post">
+            @csrf
+            @method('put')
+            <textarea name="cause_of_reject" id="" cols="50" rows="10">Sebäbini ýazyň
+            </textarea>
+            <br>
+            <button class="btn btn-danger" type="submit">Tassyklamak</button>
+          </form>
+        @endif
+         
+      </div>
+
     </div>
   </div>
+@endsection
+
+@section('scripts')
+  <script>
+    $(function() {
+      $('[data-form="reject"]').hide();
+      $('[data-btn="reject"]').click(function() {
+        $(this).hide();
+        $('[data-form="reject"]').show();
+      })
+    })
+  </script>
 @endsection

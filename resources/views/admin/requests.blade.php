@@ -45,6 +45,7 @@
                 <th class="sorting" tabindex="0" rowspan="1" colspan="1">Telefon belgisi
                 </th>
                 <th class="sorting" tabindex="0" rowspan="1" colspan="1">Email</th>
+                <th class="sorting" tabindex="0" rowspan="1" colspan="1">Status</th>
               </tr>
               </thead>
               <tbody>
@@ -57,6 +58,15 @@
                   <td class="sorting_1">{{ $req->fullname }}</td>
                   <td>{{ $req->phone }}</td>
                   <td>{{ $req->email }}</td>
+                  <td>
+                    @if ($req->status === 1)
+                      <i class=" text-success fas fa-check p-3  rounded-circle border border-success"></i>
+                    @endif
+                    
+                    @if ($req->status === 2)
+                      <i class="text-danger fas fa-times p-3 rounded-circle border border-danger" data-toggle="tooltip" data-placement="top" title="{{ $req->cause_of_reject }}"></i>
+                    @endif
+                  </td>
                 </tr>
               @endforeach
             </tbody>
@@ -81,5 +91,15 @@
   </div>
   <!-- /.container-fluid -->
 </section>
+
+@endsection
+
+@section('scripts')
+
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
 @endsection

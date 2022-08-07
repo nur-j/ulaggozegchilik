@@ -96,6 +96,23 @@ class RequestController extends Controller
         return view('admin.request_single', compact('req'));
     }
 
+    public function accept($id) 
+    {
+        $req = R::find($id);
+        $req->status = 1;
+        $req->save();
+        return redirect()->back()->withSuccess('Bu ýüztutma kabul edildi!');
+    }
+
+    public function reject(Request $request, $id)
+    {
+        $req = R::find($id);
+        $req->status = 2;
+        $req->cause_of_reject = $request->cause_of_reject;
+        $req->save();
+        return redirect()->back()->withSuccess('Bu ýüztutma ret edildi!');
+    }
+
     public function export()
     {
         return Excel::download(new RequestExport, 'yuztutmalar.xlsx');
