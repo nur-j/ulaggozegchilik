@@ -233,6 +233,24 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a href="{{ route('admin.userlist') }}" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                Ulanyjylar
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="/translations" class="nav-link">
+              <i class="nav-icon fas fa-language"></i>
+              <p>
+                Terjimeler
+              </p>
+            </a>
+          </li>
   
           
           <li class="nav-header">EXAMPLES</li>

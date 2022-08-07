@@ -10,6 +10,7 @@ use App\Http\Controllers\MailController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\RssFeedController;
+use App\Http\Controllers\Auth\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,17 +23,9 @@ use App\Http\Controllers\RssFeedController;
 |
 */
 
-Route::get('/', [PageController::class, 'home_page'])->name('home.page');
-Route::get('/about', [PageController::class, 'about_page'])->name('about.page');
-Route::get('/contact', [PageController::class, 'contact_page'])->name('contact.page');
-Route::get('/services', [PageController::class, 'services_page'])->name('services.page');
-Route::get('/request', [PageController::class, 'request_page'])->name('request.page');
-Route::get('/news', [NewsController::class, 'index'])->name('news.page');
 
 
-
-
-Route::get('/lang-change', [LanguageController::class, 'langChange'])->name('lang.change');
+/* +++++++++++++++++  ADMIN ROUTES   +++++++++++++++++++++++++ */
 
 Route::prefix('/backend/admin')->group(function () {
     Route::get('/', function() {
@@ -58,7 +51,31 @@ Route::prefix('/backend/admin')->group(function () {
     Route::delete('/permission/{id}', [PermissionController::class, 'destroy'])->name('admin.permission.delete');
 
     Route::resource('category', CategoryController::class);
+
+    /* Users */
+    Route::get('/users', [UserController::class, 'index'])->name('admin.userlist');
+    Route::get('/users/{id}', [UserController::class, 'show'])->name('admin.user_single');
 });
+
+
+
+
+
+
+
+Route::get('/', [PageController::class, 'home_page'])->name('home.page');
+Route::get('/about', [PageController::class, 'about_page'])->name('about.page');
+Route::get('/contact', [PageController::class, 'contact_page'])->name('contact.page');
+Route::get('/services', [PageController::class, 'services_page'])->name('services.page');
+Route::get('/request', [PageController::class, 'request_page'])->name('request.page');
+Route::get('/news', [NewsController::class, 'index'])->name('news.page');
+
+
+
+
+Route::get('/lang-change', [LanguageController::class, 'langChange'])->name('lang.change');
+
+
 
 
 /* Ýüz tutma routes */
