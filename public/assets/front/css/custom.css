@@ -42,8 +42,15 @@ footer a {
   color: white !important;
 }
 
-footer .about-widget {
+footer p.brand-text {
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px ) {
+  footer p.brand-text {
+    word-wrap: break-word;
+    font-size: 16px;
+  }
 }
 
 .custom-alert {

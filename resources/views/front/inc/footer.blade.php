@@ -11,7 +11,7 @@
                 alt="Logo" 
               />
             </a>
-            <p>{{ __('messages.turkmenulaggozegchilik') }}</p>
+            <p class="brand-text">{{ __('messages.turkmenulaggozegchilik') }}</p>
           </div>
         </div>
       </div>  

@@ -9,7 +9,7 @@ class PageController extends Controller
 {
     public function home_page()
     {
-        $posts = News::all();
+        $posts = News::orderBy('created_at', 'desc')->limit(2)->get();
         return view('front.index', compact('posts'));
     }
 
