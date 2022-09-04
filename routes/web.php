@@ -117,8 +117,3 @@ Route::get('viewmail', function() {
 /* RSS */
 Route::get('/rss', [RssFeedController::class,'generate_rss_feed'])->name('feed');
 
-/* PUSHER TEST */
-Route::get('test', function () {
-    event(new App\Events\RequestSended('Someone'));
-    return "Event has been sent!";
-});
