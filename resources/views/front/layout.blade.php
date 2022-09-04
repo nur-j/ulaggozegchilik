@@ -55,6 +55,8 @@
       <div class="scroll-to-top"><span class="icofont-rounded-up"></span></div>
     </div>
 
+    @include('cookieConsent::index')
+
     <!--=======================Javascript============================-->
 
     <!--=== Modernizr Min Js ===-->

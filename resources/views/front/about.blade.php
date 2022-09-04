@@ -3,7 +3,8 @@
   @section('content')
 
     <main class="main-content site-wrapper-reveal">
-     About page
+      
+    </main>
     
   @endsection
 
