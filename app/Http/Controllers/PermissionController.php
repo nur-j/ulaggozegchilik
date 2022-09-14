@@ -17,6 +17,9 @@ class PermissionController extends Controller
 
     public function create(Request $request)
     {
+        $request->validate([
+            'razresheniye_no' => 'required|unique:permissions'
+        ]);
         Permission::create($request->all());
         return redirect('dashboard')->withSuccess('Rugsatnama üstünlikli döredildi');
     }
