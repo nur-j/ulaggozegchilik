@@ -132,5 +132,8 @@ return array (
     array (
       'rule-name' => 'custom-message',
     ),
+
+    'razresheniye_no' => ['unique' => 'Такой номер разрешения уже зарегистрирован']
+
   ),
 );

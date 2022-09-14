@@ -136,6 +136,8 @@ return array (
     'cmr_number' => ['required' => 'CMR sanyny hökman görkezmeli'],
     'permission_number' => ['required' => 'Rugsatnama sanyny görkezmeli'],
     'fullname' => ['required' => 'Jogapkär işgäriň adyny we familiýasyny görkezmeli'],
-    'phone' => ['required' => 'Telefon belgini görkezmeli']
+    'phone' => ['required' => 'Telefon belgini görkezmeli'],
+
+    'razresheniye_no' => ['unique' => 'Siziň girizen rugsatnamaňyzyň nomeri öň hem hasaba alnan']
   ),
 );

@@ -37,6 +37,8 @@
 
       @include('front.inc.alert')
 
+      @include('front.inc.error')
+
       <!--== Start Header Wrapper ==-->
       
       @include('front.inc.header')
