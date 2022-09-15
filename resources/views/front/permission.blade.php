@@ -20,15 +20,25 @@
             Государственная принадлежность автотранспортного средства <br />
             Awtoulag serişdesiniň döwlet degişliligi
           </label>
-          <input type="text" name="gos_prinad" class="form-control" id="gos_prinad">
+          <input type="text" name="gos_prinad" class="form-control" list="countries" id="gos_prinad">
+          <datalist id="countries">
+            @foreach ($countries as $country)
+            <option value="{{ $country->code . ' - ' . $country->title }}">
+            @endforeach 
+          </datalist>
         </div>
 
         <div class="mb-3 col-md-6">
-          <label for="marka" class="form-label">
+          <label for="brands" class="form-label">
             Марка автотранспортного средства <br />
             Awtoulag serişdesiniň markasy
           </label>
-          <input type="text" name="marka" class="form-control" id="marka">
+          <input type="text" name="marka" class="form-control" list="brands">
+          <datalist id="brands">
+            @foreach ($brands as $brand)
+              <option value="{{ $brand->title }}">    
+            @endforeach
+          </datalist>
         </div>
 
         <div class="mb-3 col-md-6">

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
 use App\Models\Permission;
+use App\Models\Brand;
+use App\Models\Country;
 use App\Exports\PermissionExport;
 use Maatwebsite\Excel\Facades\Excel;
 
@@ -12,7 +14,9 @@ class PermissionController extends Controller
 {
     public function index()
     {
-        return view('front.permission');
+        $brands = Brand::all();
+        $countries = Country::all();
+        return view('front.permission', compact('brands', 'countries'));
     }
 
     public function create(Request $request)
@@ -20,7 +24,7 @@ class PermissionController extends Controller
         $request->validate([
             'razresheniye_no' => 'required|unique:permissions'
         ]);
-        
+
         Permission::create($request->all());
         return redirect('dashboard')->withSuccess('Rugsatnama üstünlikli döredildi');
     }
