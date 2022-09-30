@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\RequestController;
@@ -28,9 +29,7 @@ use App\Http\Controllers\Auth\UserController;
 /* +++++++++++++++++  ADMIN ROUTES   +++++++++++++++++++++++++ */
 
 Route::group(['prefix' => '/backend/admin', 'middleware' => 'admin'], function () {
-    Route::get('/', function() {
-        return view('admin.home');
-    })->name('admin_panel');
+    Route::get('/', [AdminController::class, 'index'])->name('admin_panel');
 
     Route::get('/news', [NewsController::class, 'admin_news'])->name('admin_news');
     Route::get('/add-news', [NewsController::class, 'add_news'])->name('add_news');
@@ -69,12 +68,15 @@ Route::get('/backend/admin/logout', [AuthController::class, 'logout'])->name('ad
 
 
 
-Route::get('/', [PageController::class, 'home_page'])->name('home.page');
-Route::get('/about', [PageController::class, 'about_page'])->name('about.page');
-Route::get('/contact', [PageController::class, 'contact_page'])->name('contact.page');
-Route::get('/services', [PageController::class, 'services_page'])->name('services.page');
-Route::get('/request', [PageController::class, 'request_page'])->name('request.page');
-Route::get('/news', [NewsController::class, 'index'])->name('news.page');
+Route::get('/', [PageController::class, 'home_page'])->name('home.page')->middleware('visitor');
+Route::middleware(['visitor'])->group(function () {
+    Route::get('/about', [PageController::class, 'about_page'])->name('about.page');
+    Route::get('/contact', [PageController::class, 'contact_page'])->name('contact.page');
+    Route::get('/services', [PageController::class, 'services_page'])->name('services.page');
+    Route::get('/request', [PageController::class, 'request_page'])->name('request.page');
+    Route::get('/news', [NewsController::class, 'index'])->name('news.page');
+});
+
 
 
 
