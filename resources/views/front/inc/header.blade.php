@@ -6,7 +6,7 @@
         <div class="col-6">
           <p>
             <i class="icofont-google-map"></i>
-            {{ __('messages.title') }}
+            {{ __('messages.real_address') }}
           </p>
         </div>
         <div class="offset-3 col-3 d-flex align-items-center">
@@ -148,17 +148,17 @@
 
                 @guest
                   <li class="ml-auto">
-                      <a class="main-menu-link" href="{{ route('login') }}">Login</a>
+                      <a class="main-menu-link" href="{{ route('login') }}">{{ __('auth.login') }}</a>
                   </li>
                   <li>
-                      <a class="main-menu-link" href="{{ route('register') }}">Register</a>
+                      <a class="main-menu-link" href="{{ route('register') }}">{{ __('auth.register') }}</a>
                   </li>
                 @else
                   <li class="ml-auto">
-                      <a class="main-menu-link" href="{{ route('dashboard') }}">Şahsy otag</a>
+                      <a class="main-menu-link" href="{{ route('dashboard') }}">{{ __('auth.dashboard') }}</a>
                   </li>
                   <li>
-                      <a class="main-menu-link" href="{{ route('logout') }}">Logout</a>
+                      <a class="main-menu-link" href="{{ route('logout') }}">{{ __('auth.logout') }}</a>
                   </li>
                 @endguest 
             </ul>

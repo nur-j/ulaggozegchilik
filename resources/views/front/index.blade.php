@@ -50,11 +50,11 @@
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <h2 class="title"><span>Biz barada</span></h2>
+                <h2 class="title"><span>{{ __('home.about_title') }}</span></h2>
                 <div>
-                  Türkmenistanyň Ministrler Kabinetiniň ýanyndaky ulag we kommunikasiýalar agentliginiň «Türkmenawtoulaglary» agentliginiň «Türkmenulaggözegçilik» döwlet kärhanasy ilkinji gezek 1994-nji ýylyň fewralynda Türkmenistanyň Awtomobil transporty ministrliginiň «Türkmentransinspeksiýa» döwlet kärhanasy hökmünde döredildi.
+                  {{ __('home.about_text') }}
                   <div class="btn-area mt-3">
-                    <a href="{{ route('about.page') }}" class="btn btn-success">Doly oka</a>
+                    <a href="{{ route('about.page') }}" class="btn btn-success">{{ __('home.read_more') }}</a>
                   </div>
                 </div>
               </div>
@@ -104,11 +104,11 @@
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <h2 class="title"><span>Hyzmatlarymyz</span></h2>
+                <h2 class="title"><span>{{ __('home.services_title') }}</span></h2>
                 <div>
-                  "Türkmenulaggözegçilik" döwlet kärhanasy Türkmenistanyň ulag ulgamynda halkara ulag-üstaşyr geçelgeleriniň mümkinçilikleriniň artdyrylmagy, ulaglar arkaly ýük gatnawlaryny kadaly guramak hem-de bu işleriň guramaçylykly amala aşyrylmagyny üpjün etmek maksady bilen giň gerimli awtoulag hyzmatlaryny hödürleýär.  
+                  {{ __('home.services_text') }}  
                   <div class="btn-area mt-3">
-                    <a href="{{ route('services.page') }}" class="btn btn-success">Doly oka</a>
+                    <a href="{{ route('services.page') }}" class="btn btn-success">{{ __('home.read_more') }}</a>
                   </div>
                 </div>
               </div>
@@ -132,7 +132,7 @@
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <h2 class="title"><span>Täzelikler</span></h2>
+                <h2 class="title"><span>{{ __('messages.news') }}</span></h2>
               </div>
               <div
                 class="post-items-style1"
