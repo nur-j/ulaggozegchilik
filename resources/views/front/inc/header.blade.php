@@ -143,9 +143,8 @@
                 <a class="main-menu-link" href="/about">{{ __('messages.about') }}</a>
               </li>
               <li class="@if (Route::current()->getName() === 'contact.page') active @endif">
-                <a class="main-menu-link" href="contact.html">{{ __('messages.contact') }}</a>
+                <a class="main-menu-link" href="{{ route('contact.page') }}">{{ __('messages.contact') }}</a>
               </li>
-
                 @guest
                   <li class="ml-auto">
                       <a class="main-menu-link" href="{{ route('login') }}">{{ __('auth.login') }}</a>

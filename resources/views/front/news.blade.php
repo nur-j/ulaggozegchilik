@@ -1,5 +1,4 @@
 @extends('front.layout')
-
   @section('content')
 
     <main class="main-content site-wrapper-reveal">
@@ -9,8 +8,8 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="page-title-content content-style3">
-                <div class="bread-crumbs bread-crumbs-style2"><a href="index.html">Baş sahypa<span class="breadcrumb-sep">/</span></a><span class="active text-black">Täzelikler</span></div>
-                <h4 class="title"><span>Täzelikler</span></h4>
+                <div class="bread-crumbs bread-crumbs-style2"><a href="index.html">{{ __('messages.home') }}<span class="breadcrumb-sep">/</span></a><span class="active text-black">{{ __('messages.news') }}</span></div>
+                <h4 class="title"><span>{{ __('messages.news') }}</span></h4>
               </div>
             </div>
           </div>
@@ -94,10 +93,10 @@
               <div class="sidebar-wrapper blog-sidebar-wrapper">
                 <!--== Start Sidebar Item ==-->
                 <div class="widget-item">
-                  <h4 class="widget-title">Gözle</h4>
+                  <h4 class="widget-title">{{ __('messages.search') }}</h4>
                   <div class="widget-search-box">
                     <form action="#" method="post">
-                      <input type="text" id="search" placeholder="Gözleg sözüni ýazyň ...">
+                      <input type="text" id="search" placeholder="{{ __('news.search_term') }} ...">
                     </form>
                   </div>
                 </div>
@@ -105,7 +104,7 @@
 
                 <!--== Start Sidebar Item ==-->
                 <div class="widget-item">
-                  <h4 class="widget-title">Kategoriýalar</h4>
+                  <h4 class="widget-title">{{ __('messages.categories') }}</h4>
                   <div class="widget-categories">
                     <ul>
                       @foreach ($categories as $category)

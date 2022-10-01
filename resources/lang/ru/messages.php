@@ -15,9 +15,12 @@ return array (
   ),
   'address' => 'Адрес',
   'pages' => 'Страницы',
+  'for_contacting' => 'Контакты',
   'arr' => 'Все права зашищены',
   'login' => 'Вход',
   'registration' => 'Регистрация',
   'dashboard' => 'Личный кабинет',
   'logout' => 'Выйти',
+  'search' => 'Поиск',
+  'categories' => 'Категории',
 );

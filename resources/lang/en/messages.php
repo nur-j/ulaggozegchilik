@@ -20,4 +20,7 @@ return array (
   'login' => 'Login',
   'logout' => 'Logout',
   'registration' => 'Registration',
+  'for_contacting' => 'Contacts',
+  'search' => 'Search',
+  'categories' => 'Categories',
 );

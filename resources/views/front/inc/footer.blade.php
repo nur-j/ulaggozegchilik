@@ -43,12 +43,6 @@
               </li>
               <li>
                 <a href="blog-details.html"
-                  ><i class="icon icofont-rounded-double-right"></i
-                  >{{ __('messages.about') }}</a
-                >
-              </li>
-              <li>
-                <a href="blog-details.html"
                   ><i class="icon icofont-rounded-double-right"></i>{{ __('messages.about') }}</a
                 >
               </li>
@@ -75,7 +69,7 @@
             </p>
             <p>
               <i class="icofont-envelope"></i>
-              trans@awtoulag.gov.tm
+              tugdk@awtoulag.gov.tm
             </p>
             <p>
               <a href="{{ route('feed') }}">

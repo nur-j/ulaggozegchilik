@@ -10,8 +10,8 @@
         <div class="col-lg-12">
           <div class="page-title-content content-style4">
             <div class="bread-crumbs bread-crumbs-style2">
-              <a href="index.html">Baş sahypa<span class="breadcrumb-sep">/</span></a>
-              <span class="active text-black">Täzelikler</span>
+              <a href="index.html">{{ __('messages.home') }}<span class="breadcrumb-sep">/</span></a>
+              <span class="active text-black">{{ __('messages.news') }}</span>
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@
                 </h2>
                 <img src="{{ asset('storage/' . $post->poster) }}" alt="hope-Blog">
                 <div class="meta">
-                  <a class="category" href="blog.html">Täzelikler</a>
+                  <a class="category" href="blog.html">{{ __('messages.news') }}</a>
                   <span>-</span> {{ $post->date }}
                 </div>
                 <div>
@@ -67,7 +67,7 @@
                 </div>
               </div>
               <div class="related-post mt-5">
-                <h2 class="title"><span>Soňky</span> Täzelikler</h2>
+                <h2 class="title"><span>{{ __('news.latest_news') }}</span></h2>
                 <div class="post-items-style3">
                   <div class="row">
                     @foreach ($recent_posts as $post)
@@ -128,10 +128,10 @@
           <div class="sidebar-wrapper blog-sidebar-wrapper mb-md-80 pt-md-10 pt-160">
             <!--== Start Sidebar Item ==-->
             <div class="widget-item">
-              <h4 class="widget-title">Gözleg</h4>
+              <h4 class="widget-title">{{ __('messages.search') }}</h4>
               <div class="widget-search-box">
                 <form action="#" method="post">
-                  <input type="text" id="search" placeholder="Gözleg sözi ...">
+                  <input type="text" id="search" placeholder="{{ __('news.search_term') }} ...">
                 </form>
               </div>
             </div>
@@ -139,7 +139,7 @@
 
             <!--== Start Sidebar Item ==-->
             <div class="widget-item">
-              <h4 class="widget-title">Kategoriýalar</h4>
+              <h4 class="widget-title">{{ __('messages.categories') }}</h4>
               <div class="widget-categories">
                 <ul>
                   @foreach ($categories as $category)

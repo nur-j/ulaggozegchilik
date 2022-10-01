@@ -23,4 +23,6 @@ return array (
   'registration' => 'Registrasiýa',
   'logout' => 'Çykmak',
   'login' => 'Login',
+  'search' => 'Gözle',
+  'categories' => 'Kategoriýalar',
 );
