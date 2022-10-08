@@ -786,7 +786,7 @@ table p {
 .page-title-area .page-title-content.content-style2 .title {
   color: #fff;
   font-family: "Inter", sans-serif;
-  font-size: 90px;
+  font-size: 85px;
   font-weight: 800;
   letter-spacing: -2.04px;
   line-height: 100px;
@@ -4060,7 +4060,7 @@ body.offcanvas-open {
 }
 
 .service-item .content p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 26px;
   margin-bottom: 30px;
 }

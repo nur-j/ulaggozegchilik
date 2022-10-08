@@ -78,7 +78,7 @@
       speed: 600,
       loop: true,
       spaceBetween: 0,
-      autoplay: false,
+      autoplay: true,
       navigation: {
         nextEl: ".hero-slider .swiper-button-next",
         prevEl: ".hero-slider .swiper-button-prev",
