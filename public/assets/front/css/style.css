@@ -3819,8 +3819,9 @@ body.offcanvas-open {
 
 .about-area .service-list-content p.text-block {
   color: #000;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 31px;
+  text-align: justify;
 }
 
 .about-area .service-list-content .service-list {
