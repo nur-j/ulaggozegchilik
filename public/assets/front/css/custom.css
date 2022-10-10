@@ -34,6 +34,7 @@
 
 .about-area img, .services-area img {
   height: 100%;
+  width: auto;
   border-radius: 10px;
 }
 
@@ -48,7 +49,9 @@
     display: none;
   }
 
-  
+  .about-area img .col-6 img, .services-area .col-6 img  {
+    height: 100px;
+  }
 
 }
 
