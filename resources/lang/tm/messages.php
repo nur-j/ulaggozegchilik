@@ -1,7 +1,6 @@
 <?php
 
 return array (
-  'title' => 'Aşgabat şäheri, Arçabil şaýoly 126',
   'about' => 'Biz barada',
   'news' => 'Täzelikler',
   'services' => 'Hyzmatlar',
@@ -16,7 +15,7 @@ return array (
   'address' => 'Salgymyz',
   'pages' => 'Sahypalar',
   'for_contacting' => 'Habarlaşmak üçin',
-  'real_address' => 'Aşgabat şäheri, Arçabil şaýoly 126',
+  'real_address' => 'Aşgabat şäheri, Arçabil şaýoly, 126',
   'arr' => 'Ähli hukuklary goralan',
   'turkmenulaggozegchilik' => '«Türkmenulaggözegçilik» döwlet kärhanasy',
   'dashboard' => 'Şahsy otag',
@@ -25,4 +24,11 @@ return array (
   'login' => 'Login',
   'search' => 'Gözle',
   'categories' => 'Kategoriýalar',
+  'subject' => 'Tema',
+  'send' => 'Ugratmak',
+  'name' => 'Adyňyz',
+  'message' => 'Habar',
+  'contact_us' => 'Biziň bilen habarlaşyň!',
+  'address_1' => 'Aşgabat ş.',
+  'address_2' => 'Arçabil şaýoly, 126',
 );

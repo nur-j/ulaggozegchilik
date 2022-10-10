@@ -141,7 +141,7 @@
 
       $('.form2part').hide();
       @if (session('form') === 'open')
-      $('.form2part').show();
+      $('.form2part').show(); 
       @endif
     });
 

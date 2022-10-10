@@ -62,8 +62,31 @@
                     <p>6. {{ __('services.service_6') }}</p>
                   </div>
                 </div>
+                <div class="col-12 service-item">
+                  <div class="content">
+                    <p>7. {{ __('services.service_7') }}</p>
+                  </div>
+                </div>
+                <div class="col-12 service-item">
+                  <div class="content">
+                    <p>8. {{ __('services.service_8') }}</p>
+                  </div>
+                </div>
+                <div class="col-12 service-item">
+                  <div class="content">
+                    <p>9. {{ __('services.service_9') }}</p>
+                  </div>
+                </div>
+                <div class="col-12 service-item">
+                  <div class="content">
+                    <p>10. {{ __('services.service_10') }}</p>
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="row mt-5" style="font-size: 25px; text-align: center">
+            {{ __('services.service_footer') }}
           </div>
         </div>
       </section>

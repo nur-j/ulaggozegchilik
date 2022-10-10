@@ -1,7 +1,6 @@
 <?php
 
 return array (
-  'title' => 'This is English Language Title.',
   'about' => 'About',
   'news' => 'News',
   'home' => 'Homepage',
@@ -23,4 +22,13 @@ return array (
   'for_contacting' => 'Contacts',
   'search' => 'Search',
   'categories' => 'Categories',
+  'real_address' => 'Ashgabat, Archabil avenue, 126',
+  'turkmenulaggozegchilik' => 'The state enterprise "Turkmenulaggozegchilik"',
+  'name' => 'Name',
+  'subject' => 'Subject',
+  'message' => 'Message',
+  'send' => 'Send',
+  'address_1' => 'Ashgabat',
+  'address_2' => 'Archabil avenue, 126',
+  'contact_us' => 'Contact us',
 );

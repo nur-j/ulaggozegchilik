@@ -28,6 +28,23 @@
                 <p class="text-block">{{ __('about.text_1') }}</p>
                 <p class="text-block">{{ __('about.text_2') }}</p>
                 <p class="text-block">{{ __('about.text_3') }}</p>
+                <p class="text-block">{{ __('about.text_4') }}</p>
+                <ul class="about-list">
+                  <li>{{ __('about.item_1') }}</li>
+                  <li>{{ __('about.item_2') }}</li>
+                  <li>{{ __('about.item_3') }}</li>
+                  <li>{{ __('about.item_4') }}</li>
+                  <li>{{ __('about.item_5') }}</li>
+                  <li>{{ __('about.item_6') }}</li>
+                  <li>{{ __('about.item_7') }}</li>
+                  <li>{{ __('about.item_8') }}</li>
+                  <li>{{ __('about.item_9') }}</li>
+                  <li>{{ __('about.item_10') }}</li>
+                  <li>{{ __('about.item_11') }}</li>
+                  <li>{{ __('about.item_12') }}</li>
+                  <li>{{ __('about.item_13') }}</li>
+                  <li>{{ __('about.item_14') }}</li>
+                </ul>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 /* HOMEPAGE  */
 
+/* ABOUT PAGE */
+
 /* DASHBOARD */
 
 /* FOOTER */
@@ -48,6 +50,18 @@
 
   
 
+}
+
+/* ABOUT PAGE */
+
+ul.about-list {
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+ul.about-list li {
+  list-style: disc;
+  margin-bottom: 8px;
 }
 
 /* FOOTER */

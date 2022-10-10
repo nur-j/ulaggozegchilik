@@ -4086,7 +4086,7 @@ body.offcanvas-open {
 }
 
 .service-style2 .service-item {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
   padding: 50px 30px 35px 40px;
   position: relative;
@@ -7569,7 +7569,7 @@ body.offcanvas-open {
 }
 
 .contact-info-content .info-address:after {
-  background-color: #fff;
+  /* background-color: #fff; */
   bottom: 8px;
   content: "";
   height: 3px;

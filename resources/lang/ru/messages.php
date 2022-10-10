@@ -1,11 +1,10 @@
 <?php
 
 return array (
-  'title' => '??? ???????? ?? ?????????? ?????.',
   'about' => 'О нас',
   'news' => 'Новости',
   'home' => 'Главная',
-  'contact' => 'Контакт',
+  'contact' => 'Контакты',
   'services' => 'Сервисы',
   'working hours' => 'Рабочее время',
   'Phone' => 'Телефон',
@@ -16,6 +15,7 @@ return array (
   'address' => 'Адрес',
   'pages' => 'Страницы',
   'for_contacting' => 'Контакты',
+  'real_address' => 'г. Ашхабад, пр. Арчабил, 126',
   'arr' => 'Все права зашищены',
   'login' => 'Вход',
   'registration' => 'Регистрация',
@@ -23,4 +23,12 @@ return array (
   'logout' => 'Выйти',
   'search' => 'Поиск',
   'categories' => 'Категории',
+  'turkmenulaggozegchilik' => 'Государственное предприятие «Туркменулаггозегчилик»',
+  'address_2' => 'пр. Арчабил, 126',
+  'contact_us' => 'Свяжитесь с нами!',
+  'message' => 'Сообщение',
+  'name' => 'Имя',
+  'send' => 'Отпправить',
+  'subject' => 'Тема',
+  'address_1' => 'г. Ашхабад',
 );

@@ -1,7 +1,7 @@
 <footer class="footer-area">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-lg-4">
+      <div class="col-sm-12 col-lg-6">
         <div class="widget-item">
           <div class="about-widget d-flex" style="gap: 20px">
             <a class="footer-logo" href="index.html">
@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>  
-      <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="widget-item">
           <h4 class="widget-title line-bottom">{{ __('messages.pages') }}</h4>
           <nav class="widget-posts">
@@ -55,7 +55,7 @@
           </nav>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="col-sm-6 col-md-6 col-lg-3">
         <div class="widget-item">
           <h4 class="widget-title line-bottom">{{ __('messages.for_contacting') }}</h4>
           <div class="widget-newsletter">
