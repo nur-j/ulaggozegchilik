@@ -257,6 +257,30 @@ tfoot th {
         </tr>
       </tbody>
     </table>
+    <p>Ýüz tutma hatynyň göçürmesi: </p>
+    <h5>
+        @if (isset($req->yuztutma))
+          <a target="_blank" href="{{ asset('storage/' . $req->yuztutma) }}">Ýükle</a>
+        @else
+          <span style="color: red">Bu faýl ýok</span>
+        @endif
+      </h5>
+      <p>Ulag – ekspedisiýa işiniň» - 52.29.22 kiçi görnüşi esasynda «Awtomobil ulaglary arkaly ýük daşamagy guramak, ýükleri ekspedisiýa etmek (ýany bilen gitmek) işi» üçin hereket edýän ygtyýarnamanyň nusgasy: </p>
+      <h5>
+        @if (isset($req->ygtyyarnama))
+          <a target="_blank" href="{{ asset('storage/' . $req->ygtyyarnama) }}">Ýükle</a>
+        @else
+          <span style="color: red">Bu faýl ýok</span>
+        @endif   
+      </h5>
+      <p>Türkmenistanyň ýuridik şahslarynyň ýeke-täk döwlet sanawy: </p>
+      <h5>
+        @if (isset($req->dowlet_sanaw))
+          <a target="_blank" href="{{ asset('storage/' . $req->dowlet_sanaw) }}">Ýükle</a>
+        @else
+          <span style="color: red">Bu faýl ýok</span>
+        @endif
+      </h5>
   </main>
   
 
