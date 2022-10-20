@@ -66,7 +66,7 @@ class RequestController extends Controller
 
             $req->save();
             \Mail::to('trans.id@ulaggozegchilik.gov.tm')->send(new \App\Mail\RequestMail($req));
-            \Mail::to('trans.buhgalteriya@ulaggozegchilik.gov.tm')->send(new \App\Mail\RequestMail($req));
+            \Mail::to('trans.bugalteriya@ulaggozegchilik.gov.tm')->send(new \App\Mail\RequestMail($req));
 
             return redirect()->route('home.page')->withSuccess('Siziň ýüztutmaňyz üstünlikli ugradyldy');
         }   
