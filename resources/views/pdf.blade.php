@@ -22,6 +22,7 @@
   <p style="margin-top: 2cm">
     "{{ $req['corpname'] }}" HJ-niň
   </p>
-  <p>Direktory:	______________________   {{ strtoupper($req['director_firstname'])[0] }}. {{ $req['director_lastname'] }}</p>
+  @php $fn = $req['director_firstname'] @endphp
+  <p>Direktory:	______________________   {{ strtoupper(mb_substr($fn, 0, 1)) }}. {{ $req['director_lastname'] }}</p>
 </body>
 </html>

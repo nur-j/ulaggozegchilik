@@ -125,15 +125,71 @@ return array (
   'uploaded' => 'The :attribute failed to upload.',
   'url' => 'The :attribute must be a valid URL.',
   'uuid' => 'The :attribute must be a valid UUID.',
-  
   'custom' => 
   array (
     'attribute-name' => 
     array (
       'rule-name' => 'custom-message',
     ),
-
-    'razresheniye_no' => ['unique' => 'Такой номер разрешения уже зарегистрирован']
-
+    'razresheniye_no' => 
+    array (
+      'unique' => 'Такой номер разрешения уже зарегистрирован',
+    ),
+    'cmr_no' => 
+    array (
+      'required' => 'Покажите номер CMR',
+    ),
+    'corpname' => 
+    array (
+      'required' => 'Укажите наименование предприятия',
+    ),
+    'fullname' => 
+    array (
+      'required' => 'Укажите фамилию и имя ответственного сотрудника',
+    ),
+    'gos_nomer' => 
+    array (
+      'required' => 'Укажите государственный № автотранспортного средства',
+    ),
+    'gos_prinad' => 
+    array (
+      'required' => 'Укажите государственную принадлежность автотранспортного средства',
+    ),
+    'gruz' => 
+    array (
+      'required' => 'Укажите наименование и вес груза',
+    ),
+    'marka' => 
+    array (
+      'required' => 'Укажите марку автотранспортного средства',
+    ),
+    'marshrut' => 
+    array (
+      'required' => 'Укажите маршрут следования груза',
+    ),
+    'mesto_wydachi' => 
+    array (
+      'required' => 'Укажите место выдачи и дата',
+    ),
+    'punkt_pog' => 
+    array (
+      'required' => 'Укажите пункт погрузки автотранспортного средства',
+    ),
+    'punkt_wyg' => 
+    array (
+      'required' => 'Пункт выгрузки автотранспортного средства',
+    ),
+    'woditel_fio' => 
+    array (
+      'required' => 'Укажите фамилию, имя, отчество перевозчика',
+    ),
+    'zayawitel' => 
+    array (
+      'required' => 'Укажите наименование заявителя',
+    ),
+    'prinad' => 
+    array (
+      'required' => 'Укажите принадлежность груза',
+    ),
   ),
 );

@@ -125,19 +125,83 @@ return array (
   'uploaded' => 'The :attribute failed to upload.',
   'url' => 'The :attribute must be a valid URL.',
   'uuid' => 'The :attribute must be a valid UUID.',
-
   'custom' => 
   array (
     'attribute-name' => 
     array (
       'rule-name' => 'custom-message',
     ),
-    'corpname' => array('required' => 'Edaranyň adyny hökman doldurmaly'),
-    'cmr_number' => ['required' => 'CMR sanyny hökman görkezmeli'],
-    'permission_number' => ['required' => 'Rugsatnama sanyny görkezmeli'],
-    'fullname' => ['required' => 'Jogapkär işgäriň adyny we familiýasyny görkezmeli'],
-    'phone' => ['required' => 'Telefon belgini görkezmeli'],
-
-    'razresheniye_no' => ['unique' => 'Siziň girizen rugsatnamaňyzyň nomeri öň hem hasaba alnan']
+    'corpname' => 
+    array (
+      'required' => 'Edaranyň adyny hökman doldurmaly',
+    ),
+    'cmr_number' => 
+    array (
+      'required' => 'CMR sanyny hökman görkezmeli',
+    ),
+    'permission_number' => 
+    array (
+      'required' => 'Rugsatnama sanyny görkezmeli',
+    ),
+    'fullname' => 
+    array (
+      'required' => 'Jogapkär işgäriň adyny we familiýasyny görkezmeli',
+    ),
+    'phone' => 
+    array (
+      'required' => 'Telefon belgini görkezmeli',
+    ),
+    'razresheniye_no' => 
+    array (
+      'unique' => 'Siziň girizen rugsatnamaňyzyň nomeri öň hem hasaba alnan',
+    ),
+    'gos_prinad' => 
+    array (
+      'required' => 'Awtoulag serişdesiniň döwlet degişliligini görkeziň',
+    ),
+    'marka' => 
+    array (
+      'required' => 'Awtoulag serişdesiniň markasyny görkeziň',
+    ),
+    'gos_nomer' => 
+    array (
+      'required' => 'Awtoulag serişdesiniň döwlet belgisini görkeziň',
+    ),
+    'woditel_fio' => 
+    array (
+      'required' => 'Sürüjiniň familiýasy, adyny görkeziň',
+    ),
+    'punkt_pog' => 
+    array (
+      'required' => 'Awtoulag serişdesiniň ýük ýüklemeli nokadyny görkeziň',
+    ),
+    'punkt_wyg' => 
+    array (
+      'required' => 'Awtoulag serişdesiniň ýüki düşürmeli nokady',
+    ),
+    'marshrut' => 
+    array (
+      'required' => 'Ýüküň gitmeli ugry',
+    ),
+    'gruz' => 
+    array (
+      'required' => 'Ýüküň görnüşini we agramyny görkeziň',
+    ),
+    'prinad' => 
+    array (
+      'required' => 'Ýüküň degişliligini görkeziň',
+    ),
+    'zayawitel' => 
+    array (
+      'required' => 'Arza berijini görkeziň',
+    ),
+    'mesto_wydachi' => 
+    array (
+      'required' => 'Rugsatnamanyň berlen ýerini we wagtyny görkeziň',
+    ),
+    'cmr_no' => 
+    array (
+      'required' => 'CMR nomeri görkeziň',
+    ),
   ),
 );

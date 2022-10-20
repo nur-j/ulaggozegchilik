@@ -111,7 +111,7 @@ Route::get('dashboard', [AuthController::class, 'dashboard'])->name('dashboard')
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 /* EMAIL ROUTES */
-Route::get('sendbasicemail', [MailController::class, 'basic_email']);
+Route::get('/tugdk-mail', [MailController::class, 'tugdk_email']);
 Route::get('viewmail', function() {
     return view('request_mail');
 });

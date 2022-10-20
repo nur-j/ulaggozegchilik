@@ -202,7 +202,7 @@ tfoot th {
       <tfoot>
         <tr>
           <th colspan='3'>
-            ulaggozegchilik.gov.tm
+            {{-- $req->email --}}
           </th>
         </tr>
       </tfoot>
@@ -212,7 +212,7 @@ tfoot th {
             Edaranyň ady
           </td>
           <td>
-            TürkmenPortal
+            {{ $req->corpname }}
           </td>
         </tr>
         <tr>
@@ -220,7 +220,7 @@ tfoot th {
             Rugsatnama sany
           </td>
           <td>
-            20
+            {{ $req->permission_number }}
           </td>
         </tr>
         <tr>
@@ -228,7 +228,7 @@ tfoot th {
             CMR sany
           </td>
           <td>
-            12
+            {{ $req->cmr_number }}
           </td>
         </tr>
         <tr>
@@ -236,7 +236,7 @@ tfoot th {
             Jogapkär işgär
           </td>
           <td>
-            Resul Berdiýew
+            {{ $req->fullname }}
           </td>
         </tr>
         <tr>
@@ -244,7 +244,7 @@ tfoot th {
             Telefon 
           </td>
           <td>
-            +993 6X XXXXXX
+            {{ $req->phone }}
           </td>
         </tr>
         <tr>
@@ -252,7 +252,7 @@ tfoot th {
             Email
           </td>
           <td>
-            example@mail.com
+            {{ $req->email }}
           </td>
         </tr>
       </tbody>

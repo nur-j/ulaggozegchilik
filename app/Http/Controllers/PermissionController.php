@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\JsonResponse;
 use App\Models\Permission;
 use App\Models\Brand;
@@ -16,14 +17,31 @@ class PermissionController extends Controller
     {
         $brands = Brand::all();
         $countries = Country::all();
-        return view('front.permission', compact('brands', 'countries'));
+        $countries_json  = json_encode($countries);
+        return view('front.permission', compact('brands', 'countries', 'countries_json'));
     }
 
     public function create(Request $request)
     {
-        $request->validate([
-            'razresheniye_no' => 'required|unique:permissions'
+        $validator = Validator::make($request->all(), [
+            'razresheniye_no' => 'required|unique:permissions',
+            'gos_prinad' => 'required',
+            'marka' => 'required', 
+            'gos_nomer' => 'required',
+            'woditel_fio' => 'required',
+            'punkt_pog' => 'required',
+            'punkt_wyg' => 'required',
+            'marshrut' => 'required',
+            'gruz' => 'required',
+            'prinad' => 'required',
+            'zayawitel' => 'required',
+            'mesto_wydachi' => 'required',
+            'cmr_no' => 'required'
         ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()->withInput()->withErrors($validator);
+        }
 
         Permission::create($request->all());
         return redirect('dashboard')->withSuccess('Rugsatnama üstünlikli döredildi');
