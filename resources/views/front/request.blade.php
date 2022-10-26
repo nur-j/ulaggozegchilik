@@ -21,8 +21,17 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="alert alert-danger" role="alert">Şu ýerde bildirişiň teksti bolmaly</div>
+          <div class="alert alert-danger" role="alert">
+            <p>«Türkmenulaggözegçilik» döwlet kärhanasynyň şu web saýty arkaly Halkara daşalýan ýüküň ýanhatyny (CMR) we Ýüki Türkmenistanyň çäginde awtoulag serişdesine ýüklemek üçin rugsatnamany almak üçin onlaýn ýüz tutmany amala aşyryp bolar.
+            <br />Onlaýn sargyt edilenden soň, elektron poçtaňyza töleg tabşyrygy barar. Töleg tabşyrygy esasynda degişli tölegi amala aşyryp, tölegiň tölenendigini tassyklaýan resminamany getireniňizden soň, sargyt eden rugsatnamalaryňyzy alyp bilersiňiz.</p>
+          
+          </div>
           <h3 class="text-primary">Onlaýn ýüztutmany nädip ugratmalygy bilen tanyşmak üçin aşakdaky wideony görüň</h3>
+          <div>
+          <video style="height: 50vh; width: auto" controls>
+            <source src="{{ asset('assets/front/ulaggozegchilik.mp4') }}" type="video/mp4">
+          </video>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Tanyşdym</button>
