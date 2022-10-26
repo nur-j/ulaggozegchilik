@@ -4,8 +4,21 @@
   <!-- default icons used in the plugin are from Bootstrap 5.x icon library (which can be enabled by loading CSS below) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css" crossorigin="anonymous">
   <!-- the fileinput plugin styling CSS file -->
-<link href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.5.0/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.5.0/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+  <style>
+    video.request {
+      height: 70vh;
+      width: auto;
+    }
 
+    @media only screen and (max-width: 768px) {
+      video.request {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+  </style>
 @endsection
 
 @section('content')
@@ -28,7 +41,7 @@
           </div>
           <h3 class="text-primary">Onlaýn ýüztutmany nädip ugratmalygy bilen tanyşmak üçin aşakdaky wideony görüň</h3>
           <div>
-          <video style="height: 50vh; width: auto" controls>
+          <video class="request" controls>
             <source src="{{ asset('assets/front/ulaggozegchilik.mp4') }}" type="video/mp4">
           </video>
           </div>
