@@ -38,7 +38,7 @@ Route::group(['prefix' => '/backend/admin', 'middleware' => 'admin'], function (
     Route::put('/update-post/{id}', [NewsController::class, 'update'])->name('update_post');
     Route::delete('delete-post/{id}', [NewsController::class, 'destroy'])->name('delete_post');
 
-    Route::get('/requests', [RequestController::class, 'index'])->name('requests.index');
+    Route::get('/requests', [RequestController::class, 'index'])->name('requests.index')->middleware('can:read-yuztutma');
     Route::get('/requests/export', [RequestController::class, 'export'])->name('requests.export');
     Route::get('/requests/{id}', [RequestController::class, 'show'])->name('requests_single');
     Route::put('/request/{id}/accept', [RequestController::class, 'accept'])->name('accept.request');
@@ -47,7 +47,7 @@ Route::group(['prefix' => '/backend/admin', 'middleware' => 'admin'], function (
         return response()->view('pusher'); 
     });
 
-    Route::get('/permissions', [PermissionController::class, 'adminIndex'])->name('admin.permissions');
+    Route::get('/permissions', [PermissionController::class, 'adminIndex'])->name('admin.permissions')->middleware('can:read-rugsatnama');
     Route::get('/permission/{id}', [PermissionController::class, 'adminShow'])->name('admin.permission.single');
     Route::delete('/permission/{id}', [PermissionController::class, 'destroy'])->name('admin.permission.delete');
 

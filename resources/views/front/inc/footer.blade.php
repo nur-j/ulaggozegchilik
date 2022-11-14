@@ -69,7 +69,7 @@
             </p>
             <p>
               <i class="icofont-envelope"></i>
-              tugdk@awtoulag.gov.tm
+              trans.sanly@ulaggozegchilik.gov.tm
             </p>
             <p>
               <a href="{{ route('feed') }}">

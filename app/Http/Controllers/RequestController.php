@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Validator;
 
 use App\Models\Request as R;
@@ -119,5 +120,53 @@ class RequestController extends Controller
     public function export()
     {
         return Excel::download(new RequestExport, 'yuztutmalar.xlsx');
+    }
+
+
+    public function api()
+    {
+        try {
+            $requests = R::all();
+        } catch (\Throwable $e) {
+            return response()->json([
+                'data' => [],
+                'message' => $e->getMessage()
+            ], JsonResponse::HTTP_INTERNAL_SERVER_ERROR);
+        }
+
+        return response()->json([
+            'data' => $requests,
+            'message' => 'Succeed'
+        ], JsonResponse::HTTP_OK);
+    }
+
+    public function postApi(Request $request)
+    {
+        try {
+            $payload = json_decode($request->getContent(), true);
+
+        } catch (\GuzzleHttp\Exception\BadResponseException $e) {
+            $errorResJson = $e
+                ->getResponse()
+                ->getBody()
+                ->getContents();
+            $errorRes = json_decode(stripslashes($errorResJson), true);
+
+            // return error
+            return response()->json([
+                'message' => 'error',
+                'data' => $errorRes
+            ], $errorRes['response']['code']);
+        }
+
+        // return success
+        return response()->json(
+            [
+                'status' => '200',
+                'data' => $payload,
+                'message' => 'success'
+            ],
+            200
+        );
     }
 }

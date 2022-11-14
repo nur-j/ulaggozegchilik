@@ -19,7 +19,7 @@
                 <h2 class="title">{{ __('messages.address_1') }}, </h2>
                 <p>{{ __('messages.address_2') }}
                 </p>
-                <a href="mailto://hello@yourdomain.com"><span>Email:</span> tugdk@awtoulag.gov.tm</a>
+                <a href="mailto://trans.sanly@ulaggozegchilik.gov.tm"><span>Email:</span> trans.sanly@ulaggozegchilik.gov.tm</a>
               </div>
               <div class="brand-office">
                 <div class="info-tem style-two">

@@ -91,8 +91,8 @@
         <span class="media-icon"><i class="icofont-envelope"></i></span>
         <div class="media-content">
           <span class="media-sub-heading">Email</span>
-          <a class="media-heading" href="mailto:tugdk@awtoulag.gov.tm"
-            >tugdk@awtoulag.gov.tm</a
+          <a class="media-heading" href="mailto:trans.sanly@ulaggozegchilik.gov.tm"
+            >trans.sanly@ulaggozegchilik.gov.tm</a
           >
         </div>
       </li>

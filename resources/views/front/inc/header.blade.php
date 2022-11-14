@@ -63,9 +63,9 @@
                   <span class="media-sub-heading">Email</span>
                   <a
                     class="media-heading"
-                    href="mailto:tugdk@awtoulag.gov.tm"
+                    href="mailto:trans.sanly@ulaggozegchilik.gov.tm"
                     style="text-transform: lowercase"
-                    >tugdk@awtoulag.gov.tm</a
+                    >trans.sanly@ulaggozegchilik.gov.tm</a
                   >
                 </div>
               </li>

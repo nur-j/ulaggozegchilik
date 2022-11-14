@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/rugsatnamalar', [PermissionController::class, 'api']);
+Route::get('/yuztutmalar', [RequestController::class, 'api']);
+Route::post('/yuztutma', [RequestController::class, 'postApi']);
