@@ -57,7 +57,7 @@
       <div class="scroll-to-top"><span class="icofont-rounded-up"></span></div>
     </div>
 
-    <!-- @include('cookieConsent::index') -->
+    {{-- @include('cookieConsent::index') --}}
 
     <!--=======================Javascript============================-->
 
